@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!-- Define HTML5 document with English language -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive viewport scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description for SEO -->
+    <meta name="description" content="Portfolio of Syed Ammar Haider, a passionate Frontend Developer skilled in HTML, CSS, JavaScript, React, and React Native.">
+    <!-- Meta keywords for search engines -->
+    <meta name="keywords" content="Frontend Developer, Web Development, React, React Native, Portfolio">
+    <!-- Author metadata -->
+    <meta name="author" content="Syed Ammar Haider">
+    <!-- Page title -->
+    <title>Syed Ammar Haider - Portfolio</title>
+    <!-- Load Google Fonts (Inter) -->
+     
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Poppins and Montserrat fonts for secondary typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Load Ionicons for social media icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Load React from CDN -->
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <!-- Load ReactDOM from CDN -->
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <!-- Load Babel from CDN -->
+    <script src="https://unpkg.com/@babel/standalone@7.25.6/@babel/standalone.min.js"></script>
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>    <div class="cursor-outline"></div>
+    <!-- React root element -->
+    <div id="root">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <span class="logo-circle"></span>
+                        <h1 class="logo-text">Syed Ammar Haider</h1>
+                    </div>
+                    <!-- Main Navigation -->
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#home" className="nav-link active">Home</a></li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#web-development">Web Development</a></li>     
+                                    <li><a href="#mobile-development">Mobile Apps</a></li>
+                                    <li><a href="#ui-design">UI/UX Design</a></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                            <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Header Actions -->
+                    <div class="header-actions">
+                        <button class="theme-toggle">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="mobile-menu-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-bg"></div>
+                <div class="container">
+                    <div class="hero-content fade-in-up">
+                        <div class="hero-text">
+                            <h2 class="hero-subtitle">Welcome to My Portfolio</h2>
+                            <h1 class="hero-title">Syed Ammar Haider</h1>
+                            <p class="hero-tagline typewriter">Frontend Developer Crafting Seamless Experiences</p>
+                            <p class="hero-description">Passionate about building responsive and user-friendly web and mobile applications.</p>
+                            <div class="hero-actions">
+                                <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+                                <a href="#projects" class="btn btn-outline btn-lg">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="hero-image slide-in-right">
+                            <div class="image-wrapper">
+                                   <img src="/images/syed.jfif"  alt="Syed Ammar Haider" class="profile-image">
+                                <div class="image-decorator"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Social Links -->
+                <div class="hero-social fade-in-up delay-3">
+                    <a href="https://www.facebook.com/profile.php?id=100091524961370&mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/syed_ammar_45?s=21" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/ammar-haider-61136b27b/edit/forms/position/2690242922/?profileFormEntryPoint=PROFILE_SECTION" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Syedammarhaider?tab=repositories" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 class="section-title">About <span>Me</span></h2>
+                        <p class="section-subtitle">Learn more about my journey and expertise</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-image slide-in-left">
+                            <div class="image-container">
+                                        <img src="images/syed.jfif" alt="Syed Ammar Haider" class="main-image">
+                                <div class="shape-decorator"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="about-text fade-in-up delay-2">
+                            <h3 class="about-heading">Frontend Developer</h3>
+                            <p class="about-description">I'm a passionate Frontend Developer skilled in HTML, CSS, JavaScript, Laravel, and React Native. I focus on building responsive, user-friendly web interfaces.</p>
+                            <p class="about-description">With a BS in Computer Science from Government College University Faisalabad.</p>
+                            <div class="about-info">
+                                <div class="info-item">
+                                    <span class="info-label">Name:</span>
+                                    <span class="info-value">Syed Ammar Haider</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Email:</span>
+                                    <span class="info-value"><a href="mailto:syedammar496539@gmail.com">syedammar496539@gmail.com</a></span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Phone:</span>
+                                    <span class="info-value"><a href="tel:+923451213830">+92 3451213830</a></span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Availability:</span>
+                                    <span class="info-value available">Freelance</span>
+                                </div>
+                            </div>
+                            <div class="about-actions">
+                                <a href="/CV.pdf" class="btn btn-primary" download >Download Resume</a>
+                                <a href="#contact" class="btn btn-outline">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="section bg-gray">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 class="section-title">My <span>Services</span></h2>
+                        <p class="section-subtitle">What I can do for you</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card fade-in-up delay-1">
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <h3 class="service-title">Web Development</h3>
+                            <p class="service-description">Building responsive and dynamic websites using modern frameworks like Laravel.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card fade-in-up delay-2">
+                            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h3 class="service-title">Mobile Apps</h3>
+                            <p class="service-description">Developing cross-platform mobile applications with React Native.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card fade-in-up delay-3">
+                            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <p class="service-description">Creating intuitive and visually appealing user interfaces.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 class="section-title">My <span>Skills</span></h2>
+                        <p class="section-subtitle">Technical expertise and tools</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skills-text fade-in-up delay-1">
+                            <h3 class="skills-heading">Technical Skills</h3>
+                            <p class="skills-description">Proficient in modern web and mobile development technologies.</p>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">HTML</span>
+                                        <span class="skill-percent">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                              
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React-Native</span>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                  <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">CSS</span>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Laravel</span>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-percent">60%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-tools slide-in-right delay-2">
+                            <h3 class="skills-heading">Tools</h3>
+                            <div class="tools-grid">
+                                <div class="tool-item">
+                                    <div class="tool-icon"><i class="fab fa-git-alt"></i></div>
+                                    <span class="tool-name">Git</span>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-icon"><i class="fab fa-figma"></i></div>
+                                    <span class="tool-name">Figma</span>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-icon"><i class="fas fa-terminal"></i></div>
+                                    <span class="tool-name">VS Code</span>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-icon"><i class="fab fa-npm"></i></div>
+                                    <span class="tool-name">NPM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section bg-gray">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 class="section-title">My <span>Projects</span></h2>
+                        <p class="section-subtitle">Showcasing my work</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="projects-filter fade-in-up delay-1">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile</button>
+                        <button class="filter-btn" data-filter="design">Design</button>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card fade-in-up delay-2" data-category="web">
+                            <div class="project-image">
+                                        <img src="/images/profile1.png" alt="...">
+                                <div class="project-overlay">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Portfolio</h3>
+                                        <p class="project-category">Web</p>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://portfolio9000.netlify.app" class="project-link"><i class="fas fa-link"></i></a>
+                                        <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card fade-in-up delay-3" data-category="mobile">
+                            <div class="project-image">
+                                     <img src="/images/habit1.png" alt="...">
+                                <div class="project-overlay">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Habit Hero</h3>
+                                        <p class="project-category">Mobile</p>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                        <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          
+            <!-- Blog Section -->
+            <section id="blog" class="section bg-gray">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 class="section-title">Latest <span>Blog</span></h2>
+                        <p class="section-subtitle">Insights and updates</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="blog-grid">
+                        <div class="blog-card fade-in-up delay-1">
+                            
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">Web Development</span>
+                                    <span class="blog-comments">3 Comments</span>
+                                </div>
+                                <h3 class="blog-title"><a href="#">Mastering React Components</a></h3>
+                                <p class="blog-excerpt">Learn how to create reusable React Native components using best practices.
+                                     Build consistent, maintainable UIs for mobile apps using props, hooks, and styling techniques.</p>
+                                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog-card fade-in-up delay-2">
+                            
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">CSS</span>
+                                    <span class="blog-comments">5 Comments</span>
+                                </div>
+                                <h3 class="blog-title"><a href="#">CSS Grid Layouts</a></h3>
+                                <p class="blog-excerpt">Design modern, flexible web structures with ease.
+Place elements exactly where you want them.
+Perfect for responsive, clean, and symmetrical layouts.</p>
+                                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 class="section-title">Get in <span>Touch</span></h2>
+                        <p class="section-subtitle">Let's work together</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-info fade-in-up delay-1">
+                            <h3 class="contact-heading">Contact Info</h3>
+                            <p class="contact-description">Feel free to reach out for collaborations or inquiries.</p>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                                    <div>
+                                        <h4 class="info-title">Phone</h4>
+                                        <p class="info-value"><a href="tel:+923451213830">+92 3451213830</a></p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                                    <div>
+                                        <h4 class="info-title">Email</h4>
+                                        <p class="info-value"><a href="mailto:syedammar496539@gmail.com">syedammar496539@gmail.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div>
+                                        <h4 class="info-title">Address</h4>
+                                        <p class="info-value">Insaf City, Pattoki, District Kasur, Punjab, Pakistan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-social">
+                                <h4 class="social-heading">Follow Me</h4>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/profile.php?id=100091524961370&mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://x.com/syed_ammar_45?s=21" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/ammar-haider-61136b27b/edit/forms/position/2690242922/?profileFormEntryPoint=PROFILE_SECTION" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://github.com/Syedammarhaider?tab=repositories" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form slide-in-right delay-2">
+                            <form id="contactForm" class="form">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-input" placeholder=" " required>
+                                    <label for="name" class="form-label">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-input" placeholder=" " required>
+                                    <label for="email" class="form-label">Your Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" class="form-input" placeholder=" ">
+                                    <label for="subject" class="form-label">Subject</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" class="form-input" placeholder=" " required></textarea>
+                                    <label for="message" class="form-label">Your Message</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about fade-in-up">
+                        <div class="footer-logo">
+                            <span class="logo-circle"></span>
+                            <h2>Syed Ammar Haider</h2>
+                        </div>
+                        <p class="footer-description">Passionate Frontend Developer creating seamless digital experiences.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100091524961370&mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/syed_ammar_45?s=21" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/ammar-haider-61136b27b/edit/forms/position/2690242922/?profileFormEntryPoint=PROFILE_SECTION" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Syedammarhaider?tab=repositories" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links fade-in-up delay-1">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact fade-in-up delay-2">
+                        <h3 class="footer-heading">Contact Info</h3>
+                        <ul class="footer-list">
+                            <li><a href="tel:+923451213830">+92 3451213830</a></li>
+                            <li><a href="mailto:syedammar496539@gmail.com">syedammar496539@gmail.com</a></li>
+                            <li><a href="#">Insaf City, Pattoki, Pakistan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter fade-in-up delay-3">
+                        <h3 class="footer-heading">Newsletter</h3>
+                        <p class="footer-description">Subscribe to get the latest updates.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 Syed Ammar Haider. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+      <script src="app.js"></script>
+
+</body>
+
+</html>
