@@ -248,3 +248,19 @@ function initCursorEffects() {
         cursorOutline.style.display = 'none';
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const logo = document.querySelector('.logo');
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    logo.classList.add('animate');
+                    observer.unobserve(logo); // Stop observing after animation
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+    observer.observe(logo);
+});
